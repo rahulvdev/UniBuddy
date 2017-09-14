@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unibuddy.finalproject.unibuddy.OpenScreenAct">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbarOpenScreen"
+        android:title="UniBuddy"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:id="@+id/signupButn"
+        android:text="@string/Signup"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/tbarOpenScreen"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/loginButn"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:text="@string/Login"
+        android:layout_marginTop="102dp"
+        android:layout_alignTop="@+id/signupButn"
+        android:layout_alignStart="@+id/signupButn" />
+</RelativeLayout>

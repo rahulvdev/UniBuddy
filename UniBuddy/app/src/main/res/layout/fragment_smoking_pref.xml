@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.unibuddy.finalproject.unibuddy.SmokingPrefFrag">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="135dp"
+        android:id="@+id/smoQues"
+        android:text="Do you smoke?"/>
+
+    <Spinner
+        android:id="@+id/spinnerSmokePref"
+        android:layout_width="211dp"
+        android:layout_below="@+id/smoQues"
+        android:layout_marginLeft="75dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/spinnerSmokePref"
+        android:id="@+id/smoOkQues"
+        android:text="Are you ok with people smoking?"/>
+
+    <Spinner
+        android:id="@+id/spinnerOkWithSmoke"
+        android:layout_width="211dp"
+        android:layout_below="@+id/smoOkQues"
+        android:layout_marginLeft="75dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/spinnerOkWithSmoke"
+        android:id="@+id/nxSmo"
+        android:text="@string/Next"/>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unibuddy.finalproject.unibuddy.FoodPreferencesFrag">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/foodPrefQues"
+        android:text="Food Preferences"/>
+
+    <Spinner
+        android:id="@+id/spinnerFoodPref"
+        android:layout_width="211dp"
+        android:layout_below="@+id/foodPrefQues"
+        android:layout_marginLeft="75dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/spinnerFoodPref"
+        android:layout_marginLeft="140dp"
+        android:id="@+id/nxFooPre"
+        android:text="@string/Next"/>
+
+</RelativeLayout>

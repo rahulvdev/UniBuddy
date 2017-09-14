@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unibuddy.finalproject.unibuddy.SignUpActivity">
+
+    <android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tbarSignUp"
+    android:title="Facebook Login Demo">
+</android.support.v7.widget.Toolbar>
+
+        <com.facebook.login.widget.LoginButton
+            xmlns:facebook="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/signup_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="10dp"
+            facebook:com_facebook_login_text="@string/FBsignup"/>
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signup_button"
+            />
+
+    <TextView
+        android:id="@+id/orText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="OR"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailEdit"
+        android:hint="Email"
+        android:layout_below="@+id/orText" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passEdit"
+        android:inputType="textPassword"
+        android:layout_below="@+id/emailEdit"
+        android:hint="Password"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitSignUp"
+        android:layout_below="@+id/passEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="SIGN UP"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submitSignUp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/msgView"/>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.unibuddy.finalproject.unibuddy.CoEdHousing">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="Do you prefer co-ed housing?"
+        android:layout_marginLeft="95dp"
+        android:id="@+id/coEdQues"/>
+
+    <Spinner
+        android:id="@+id/spinnerCoEd"
+        android:layout_width="211dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_below="@+id/coEdQues"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Next"
+        android:id="@+id/nxCo"
+        android:layout_marginLeft="140dp"
+        android:layout_below="@+id/spinnerCoEd"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_filter"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Filters" />
+        <item
+            android:id="@+id/nav_roomType"
+            android:title="Room Type" />
+        <item
+            android:id="@+id/nav_foodPref"
+            android:title="Food Preference" />
+        <item
+            android:id="@+id/nav_coedPref"
+            android:title="CoEd Preference" />
+        <item
+            android:id="@+id/nav_smokePref"
+            android:title="Smoking Preference" />
+        <item
+            android:id="@+id/nav_smokeOkPref"
+            android:title="Smoking ok Prefernce" />
+        <item
+            android:id="@+id/nav_alcPref"
+            android:title="Alcohol Preference" />
+        <item
+            android:id="@+id/nav_alcOkPref"
+            android:title="Alcohol ok Preference" />
+    </group>
+
+</menu>
